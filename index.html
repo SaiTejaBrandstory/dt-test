@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DT Studio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .logo-container {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+        .logo-container img {
+            width: 500px;
+            height: auto;
+            max-width: calc(100vw - 40px);
+        }
+        
+        /* Mobile responsiveness */
+        @media screen and (max-width: 768px) {
+            .logo-container {
+                top: 10px;
+                left: 10px;
+            }
+            .logo-container img {
+                width: 80%;
+                max-width: calc(100vw - 20px);
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            .logo-container img {
+                width: 100%;
+                max-width: calc(100vw - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <a href="https://www.designtransit.net/dt/home/" target="_blank">
+            <img src="images/anand.png" alt="Anand">
+        </a>
+    </div>
+</body>
+</html>
